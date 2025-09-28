@@ -32,14 +32,18 @@ int main() {
 
     vector<Movie> movie_vec;
     ifstream readfile("input.txt");
-    string s;
-    int y;
-    string t;
 
     if (!readfile) { cout << "File not found\n"; return 1;}
 
+    for (int i =0; i < 4; i++){
+        string title, writer; int year;
 
+        getline(readfile, title);
+        if (!readfile) break;
 
+        readfile >> year;
+        readfile >> ws;
 
+    }
 
 }
