@@ -32,7 +32,6 @@ int main() {
 
     vector<Movie> movie_vec;
     ifstream readfile("input.txt");
-
     if (!readfile) { cout << "File not found\n"; return 1;}
 
     for (int i =0; i < 4; i++){
@@ -53,6 +52,5 @@ int main() {
         temp.setScreenwriter(writer);
         movie_vec.push_back(temp);
     }
-
     for (auto m : movie_vec) {cout << "\n"; m.print();}
 }
