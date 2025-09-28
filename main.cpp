@@ -20,5 +20,9 @@ class Movie{
         void setYearreleased(int yr) {yearReleased = yr;}
         void setTitlecard(string tc) {titleCard = tc;}
 
-
+    void print() {
+        cout << "Movie: " << titleCard << "\n" 
+        << "Year released: " << yearReleased << "\n"
+        << "Screenwriter: " << screenWriter << "\n";
+}
 };
