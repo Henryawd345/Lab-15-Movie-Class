@@ -6,6 +6,8 @@
 
 using namespace std;
 
+int size = 5;
+
 class Movie{
     private:
         string screenWriter;
@@ -25,4 +27,23 @@ class Movie{
         << "Year released: " << yearReleased << "\n"
         << "Screenwriter: " << screenWriter << "\n";
 }
+
 };
+
+int main() {
+
+    vector<Movie> movie_vec;
+    ifstream readfile("input.txt");
+    string s;
+    int y;
+    string t;
+
+    if (readfile.ignore()){
+        while (readfile >> s)
+
+    }
+
+
+
+
+}
