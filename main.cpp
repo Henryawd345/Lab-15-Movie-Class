@@ -44,6 +44,15 @@ int main() {
         readfile >> year;
         readfile >> ws;
 
+        getline(readfile, writer);
+        if (!readfile) break;
+
+        Movie temp;
+        temp.setTitlecard(title);
+        temp.setYearreleased(year);
+        temp.setScreenwriter(writer);
+        movie_vec.push_back(temp);
     }
 
+    for (auto m : movie_vec) {cout << "\n"; m.print();}
 }
