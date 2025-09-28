@@ -21,9 +21,9 @@ class Movie{
         void setTitlecard(string tc) {titleCard = tc;}
 
     void print() {
-        cout << "Movie: " << titleCard << "\n" 
+        cout << "Movie: " << screenWriter << "\n" 
         << "Year released: " << yearReleased << "\n"
-        << "Screenwriter: " << screenWriter << "\n";
+        << "Screenwriter: " << titleCard << "\n";
 }
 
 };
