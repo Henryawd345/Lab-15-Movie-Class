@@ -6,8 +6,6 @@
 
 using namespace std;
 
-int size = 5;
-
 class Movie{
     private:
         string screenWriter;
@@ -38,10 +36,8 @@ int main() {
     int y;
     string t;
 
-    if (readfile.ignore()){
-        while (readfile >> s)
+    if (!readfile) { cout << "File not found\n"; return 1;}
 
-    }
 
 
 
